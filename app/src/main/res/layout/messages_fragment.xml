@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fr_back"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Повідомлення"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_arrow_back"
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/ic_arrow_back_new" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#379C9C9C"
+
+            android:elevation="2dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fr_previos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Діалоги"
+                android:textAllCaps="true"
+                android:textColor="#1F2C33"
+                android:textSize="12sp"
+                app:fontFamily="@font/firasansregular" />
+
+            <FrameLayout
+                android:id="@+id/fr_line_early"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:background="#148ecc"
+                android:visibility="visible">
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fr_today"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Контакти"
+                android:textAllCaps="true"
+                android:textColor="#879399"
+                android:textSize="12sp"
+                app:fontFamily="@font/firasansregular" />
+
+            <FrameLayout
+                android:id="@+id/fr_line_today"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:background="#148ecc"
+                android:visibility="invisible">
+
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/listViewSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+
+
+            />
+
+        <FrameLayout
+            android:id="@+id/fr_progres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D8000000">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="bottom"
+                android:background="#379C9C9C"
+
+                android:elevation="2dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

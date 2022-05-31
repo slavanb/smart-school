@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:text="Опишіть проблему з якою ви зіткнулися в додатку"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/tv_mailUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Ваш e-mail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/tv_mailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Опишіть проблему"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+
+
+        />
+</LinearLayout>

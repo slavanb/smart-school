@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#358DCC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo_2" />
+
+
+    <TextView
+        android:id="@+id/tv_name_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Введите логин та пароль"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:fontFamily="@font/firasans_medium" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edt_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Логін"
+            android:fontFamily="@font/firasansregular"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/gps_mark" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#fff"
+            android:ems="10"
+            android:gravity="center"
+            android:fontFamily="@font/firasansregular"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="22dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            app:srcCompat="@drawable/lock" />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/press_btn_back"
+        android:drawableLeft="@drawable/press_btn_sign_in_button"
+        android:enabled="true"
+
+        android:fontFamily="@font/firasans_medium"
+        android:paddingLeft="11dp"
+        android:paddingRight="30dp"
+        android:text="Увійти"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@drawable/press_button_text_color"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

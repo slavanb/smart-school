@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SmartSchool</string>
+    <string name="Remember">Напомнить</string>
+    <string name="Do_not_remember">Не напоминать</string>
+    <string name="ok">Хорошо</string>
+    <string name="Leave_a_review_at_Play_Market">Оцените приложение</string>
+    <string name="Do_not_forget_to_rate_the_app">Напоминание </string>
+
+
+
+    <string-array name="spinnerItems">
+        <item>За алфавітом</item>
+        <item>Середній бал</item>
+        <item>Середньо-вагова оцінка</item>
+        <item>Кількість оцінок</item>
+        <item>Кількість заліків</item>
+        <item>Кількість не заліків</item>
+        <item>Кількість пропусків</item>
+        <item>Кількість запізнень</item>
+
+    </string-array>
+
+</resources>

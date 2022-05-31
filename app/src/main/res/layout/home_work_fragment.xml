@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9eff2"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fr_back"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Домашні завдання"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:fontFamily="@font/firasansbold" />
+
+            <TextView
+                android:id="@+id/tv_date_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:textColor="#148ecc"
+                android:textStyle="bold"
+                app:fontFamily="@font/firasansregular" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_arrow_back_new" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:text="назад"
+            android:textColor="#4d6bcf"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fr_previos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="6dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_arrow_back_small" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="РАніше"
+                    android:textAllCaps="true"
+                    android:textColor="#879399"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/firasansregular" />
+
+                <FrameLayout
+                    android:id="@+id/fr_line_early"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:background="#148ecc"
+                    android:visibility="invisible">
+
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fr_today"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Поточний тиждень"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/firasansregular" />
+
+                <FrameLayout
+                    android:id="@+id/fr_line_today"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:background="#148ecc"
+                    android:visibility="visible">
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fr_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="35dp"
+                    android:text="пізніше"
+                    android:textAllCaps="true"
+                    android:textColor="#879399"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/firasansregular" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="6dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_arrow_fwd_small" />
+
+                <FrameLayout
+                    android:id="@+id/fr_line_tomorow"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:background="#148ecc"
+                    android:visibility="invisible">
+
+                </FrameLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_rozklad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+
+                <FrameLayout
+                    android:id="@+id/fr_progres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D8000000">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_arrow_back1"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:rotation="90"
+                        android:src="@android:drawable/arrow_down_float" />
+                </FrameLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ExpandableListView
+        android:id="@+id/exp_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:fitsSystemWindows="true"
+        android:groupIndicator="@null" />
+
+
+</LinearLayout>

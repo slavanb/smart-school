@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartSchool</string>
+
+    <string name="Remember">Нагадати</string>
+    <string name="Do_not_remember">Не нагадувати</string>
+    <string name="ok">Добре</string>
+    <string name="Location_Settings">Налаштування</string>
+    <string name="Cancel">Отмена</string>
+    <string name="MessageAlert">Ввімкніть функцію місцезнаходження для використання додатку</string>
+    <string name="EnableLocation">Місцезнаходження</string>
+    <string name="Leave_a_review_at_Play_Market">Оцініть додаток</string>
+    <string name="Do_not_forget_to_rate_the_app">Нагадування </string>
+</resources>

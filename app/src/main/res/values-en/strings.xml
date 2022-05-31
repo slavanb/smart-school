@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SmartSchool</string>
+    <string name="Remember">Remember</string>
+    <string name="Do_not_remember">Not remember</string>
+    <string name="ok">Ok</string>
+    <string name="Location_Settings">Location Settings</string>
+    <string name="Cancel">Cancel</string>
+    <string name="MessageAlert">Your Locations Settings is set to Off
+        Please Enable Location to use this app</string>
+    <string name="EnableLocation">Enable Location</string>
+    <string name="Leave_a_review_at_Play_Market">Leave a review</string>
+    <string name="Do_not_forget_to_rate_the_app">Do not forget to rate the app  </string>
+</resources>

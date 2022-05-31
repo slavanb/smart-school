@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fr_back"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            android:src="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/img_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="15dp"
+            android:src="@drawable/ic_settings_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="Оцінки та статистика"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:fontFamily="@font/firasansbold" />
+
+            <TextView
+                android:id="@+id/tv_date_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="#358DCC"
+                android:textStyle="bold"
+                app:fontFamily="@font/firasansregular" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_arrow_back"
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_arrow_back_new" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+
+            android:background="#C6D7E8" />
+    </FrameLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#358DCC"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Налаштування"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/firasans_medium" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Період"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="17dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="13dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="14dp"
+                            android:src="@drawable/calendar" />
+
+                        <EditText
+                            android:id="@+id/edt_date_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="38dp"
+                            android:layout_weight="1"
+                            android:background="#fff"
+                            android:ems="10"
+                            android:fontFamily="@font/firasansregular"
+                            android:hint="2018-01-01"
+                            android:inputType="textPersonName"
+                            android:textColor="#1F2C33" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:rotation="180"
+                        android:src="@drawable/ic_arrow_back_new" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="#fff">
+
+                        <ImageView
+                            android:id="@+id/imageView191"
+                            android:layout_width="12dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="14dp"
+                            android:src="@drawable/calendar" />
+
+                        <EditText
+                            android:id="@+id/edt_date_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="38dp"
+                            android:layout_weight="1"
+                            android:background="#fff"
+                            android:ems="10"
+                            android:fontFamily="@font/firasansregular"
+                            android:hint="2018-01-01"
+                            android:inputType="textPersonName"
+                            android:textColor="#1F2C33" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Сортування"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/firasans_medium" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_sort" />
+
+                    <Spinner
+                        android:id="@+id/spin_sort"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="32dp"
+                        android:layout_weight="1"
+                        android:entries="@array/spinnerItems"
+                        android:gravity="center"
+                        android:overlapAnchor="false"
+                        android:textAlignment="center" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FF95"
+                    android:drawableLeft="@drawable/tick_new"
+                    android:drawablePadding="-10dp"
+                    android:fontFamily="@font/firasans_medium"
+                    android:paddingLeft="15dp"
+
+                    android:text="Застосувати"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_rozklad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ECF2F7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_predmet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_weight="1"
+                            android:text="Всього"
+                            android:textColor="#1F2C33"
+                            android:textSize="20sp"
+                            app:fontFamily="@font/firasansregular" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="32dp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Середній бал"
+                                        android:textColor="#1F2C33"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/firasans_medium" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tv_all_srednij_bal"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textSize="24sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView18"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=" / 100"
+                                            android:textColor="#C6D7E8" />
+                                    </LinearLayout>
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar3"
+                                        style="?android:attr/progressBarStyleHorizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="4dp"
+                                        android:layout_marginTop="4dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Середніовагова оцінка"
+                                        android:textColor="#1F2C33"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/firasans_medium" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tv_all_sered_vag_ocinka"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textSize="24sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView23"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text=" / 100"
+                                            android:textColor="#C6D7E8" />
+                                    </LinearLayout>
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar4"
+                                        style="?android:attr/progressBarStyleHorizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="4dp"
+                                        android:layout_marginTop="4dp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView5011"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="заліків"
+                                    android:textColor="#1F2C33"
+                                    android:textSize="12sp"
+                                    app:fontFamily="@font/firasansregular" />
+
+                                <TextView
+                                    android:id="@+id/tv_all_kil_zalikiv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textColor="#3DCE41"
+                                    app:fontFamily="@font/firasansmedium" />
+
+                                <TextView
+                                    android:id="@+id/textView48"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="/" />
+
+                                <TextView
+                                    android:id="@+id/textView27222"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="незаліків"
+                                    android:textColor="#1F2C33"
+                                    android:textSize="12sp"
+                                    app:fontFamily="@font/firasansregular" />
+
+                                <TextView
+                                    android:id="@+id/tv_ne_zalik"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textColor="#F53137"
+                                    app:fontFamily="@font/firasans_medium" />
+
+                                <TextView
+                                    android:id="@+id/textView51"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="/" />
+
+                                <TextView
+                                    android:id="@+id/textView52"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="оцінок"
+                                    android:textColor="#1F2C33"
+                                    android:textSize="12sp"
+                                    app:fontFamily="@font/firasansregular" />
+
+                                <TextView
+                                    android:id="@+id/tv_all_kil_ocinok"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textColor="#1F2C33"
+                                    app:fontFamily="@font/firasansmedium" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="12dp"
+                                android:layerType="software"
+                                android:src="@drawable/dotted_line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView50"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:text="Присутність"
+                                    android:textColor="#1F2C33"
+                                    android:textSize="12sp"
+                                    app:fontFamily="@font/firasans_medium" />
+
+                                <TextView
+                                    android:id="@+id/textView49"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="пропусків"
+                                    android:textColor="#1F2C33"
+                                    android:textSize="12sp"
+                                    app:fontFamily="@font/firasansregular" />
+
+                                <TextView
+                                    android:id="@+id/tv_all_kil_propuskiv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:textColor="#F53137"
+                                    app:fontFamily="@font/firasansmedium" />
+
+                                <TextView
+                                    android:id="@+id/textView27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text=" / " />
+
+                                <TextView
+                                    android:id="@+id/textView26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="запізнень"
+                                    android:textColor="#1F2C33"
+                                    android:textSize="12sp"
+                                    app:fontFamily="@font/firasansregular" />
+
+                                <TextView
+                                    android:id="@+id/tv_kil_zapizneny"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.4"
+                                    android:text="0"
+                                    android:textColor="#EE8E16"
+                                    app:fontFamily="@font/firasansmedium" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fr_progres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#D8000000"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
